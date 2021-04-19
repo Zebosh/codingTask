@@ -1,2 +1,1 @@
-README.md
-#REST API Testing Exercise
+# REST API Testing Exercise
