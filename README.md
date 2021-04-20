@@ -32,11 +32,12 @@ API endpoint: `/user/{userId}`
  >Project's Lifecycle-> click "verify"
 
 ***2. Way***
+
 Run from command line-> invoke `mvn clean verify`
 ---
 ## Test Reports Locations
 
-1- Cucumber HTML Plugin Reports target -> cucumber-html-reports > overview-steps.html (Right Click and Open in any Browser )
+- Cucumber HTML Plugin Reports target -> cucumber-html-reports > overview-steps.html (Right Click and Open in any Browser )
 ---
 
-2021 April &copy Zebo Narimanova
+2021 April by  *Zebo Narimanova*
