@@ -5,13 +5,16 @@
 
 
 ## Framework
-#### 1.Main framework is based on Rest Assured with Cucumber BDD(JUnit Assertions)
+#### 1. Framework is based on Rest Assured with Cucumber BDD(JUnit Assertions)
 
-#### 2. pojo and requestHMatchers packages are based on Rest Assured Library with TestNG assertions (2 other ways of validating data)
 
--Build tool- Maven
--System Requirements- Java 8+ SDK
+####- Build tool- Maven
+####- System Requirements- Java 8+ SDK
 
 ---
-###TASK:
-Using Rest-Assured, Cucumber, JUnit and Java, create a scenario to validate the specific user information.
+### TASK:
+Using Rest-Assured, Cucumber, and Java, create a scenario to validate the specific user information.
+---
+API url: `https://dummyapi.io/data/api/`
+
+API endpoint: `/user/{userId}`
