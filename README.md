@@ -7,8 +7,7 @@
 ## Framework
 
 is based on Rest Assured with Cucumber BDD(JUnit Assertions)
----
-### System Requirements
+
 * Build tool- Maven
 
 * System Requirements- Java 8+ SDK
@@ -16,7 +15,7 @@ is based on Rest Assured with Cucumber BDD(JUnit Assertions)
 ---
 ### TASK:
 
-Using Rest-Assured, Cucumber, and Java, create a scenario to validate the specific user information.
+* Using Rest-Assured, Cucumber, and Java, create a scenario to validate the specific user information.
 ---
 API base url: `https://dummyapi.io/data/api/`
 
@@ -39,7 +38,7 @@ API endpoint: `/user/{userId}`
 ---
 ## Test Reports Locations
 
--Cucumber HTML Plugin Reports target -> cucumber-html-reports > overview-steps.html (Right Click and Open in any Browser )
+* Cucumber HTML Plugin Reports target -> cucumber-html-reports > overview-steps.html (Right Click and Open in any Browser )
 ---
 
 2021 April by  *Zebo Narimanova*
