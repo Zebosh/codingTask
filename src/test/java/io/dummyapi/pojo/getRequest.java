@@ -2,6 +2,7 @@ package io.dummyapi.pojo;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.Before;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import io.dummyapi.utilities.ConfigurationReader;
@@ -9,6 +10,7 @@ import io.dummyapi.utilities.ConfigurationReader;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
+import org.junit.Assert;
 
 public class getRequest {
     @BeforeClass
@@ -31,6 +33,7 @@ public class getRequest {
                 .header("app-id", appID)
                 .and().pathParam("userId","1OuR3CWOEsfISTpFxsG7")
                 .when().get("/user/{userId}");
+
 
         assertEquals(response.statusCode(), 200);
         assertEquals(response.header("Content-Length"),"426");
