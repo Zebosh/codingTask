@@ -5,16 +5,31 @@
 
 
 ## Framework
-#### 1. Framework is based on Rest Assured with Cucumber BDD(JUnit Assertions)
+#### is based on Rest Assured with Cucumber BDD(JUnit Assertions)
 
 
-####- Build tool- Maven
-####- System Requirements- Java 8+ SDK
+* Build tool- Maven
+
+* System Requirements- Java 8+ SDK
 
 ---
 ### TASK:
-Using Rest-Assured, Cucumber, and Java, create a scenario to validate the specific user information.
+##### Using Rest-Assured, Cucumber, and Java, create a scenario to validate the specific user information.
 ---
-API url: `https://dummyapi.io/data/api/`
+API base url: `https://dummyapi.io/data/api/`
 
 API endpoint: `/user/{userId}`
+
+---
+## Test RUN
+Notes: to run the scenarios, @user tag in the CukesRunner class
+
+1. Way
+
+ * Go  **src->test->java->io->dummyapi->runners->CukesRunner** and RUN
+ * To generate "HTML Cucumber Report":
+ >Open Maven  right side panel-> Double Click on
+ >Project's Lifecycle-> click "verify"
+
+2. Way
+Run from command line-> invoke `mvn clean verify`
