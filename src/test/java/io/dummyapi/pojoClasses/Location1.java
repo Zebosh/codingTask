@@ -1,12 +1,12 @@
 
-package io.dummyapi.pojo;
+package io.dummyapi.pojoClasses;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class Location {
+public class Location1 {
 
     @SerializedName("street")
     @Expose
@@ -26,20 +26,20 @@ public class Location {
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
-    public Location() {
+    public Location1() {
     }
 
     /**
-     * 
+     *
      * @param country
      * @param city
      * @param street
      * @param timezone
      * @param state
      */
-    public Location(String street, String country, String state, String city, String timezone) {
+    public Location1(String street, String country, String state, String city, String timezone) {
         super();
         this.street = street;
         this.country = country;

@@ -1,11 +1,12 @@
 
-package io.dummyapi.pojo;
+package io.dummyapi.pojoClasses;
 
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class User{
+
+public class User1 {
 
     @SerializedName("id")
     @Expose
@@ -18,7 +19,7 @@ public class User{
     private String picture;
     @SerializedName("location")
     @Expose
-    private Location location;
+    private Location1 location;
     @SerializedName("lastName")
     @Expose
     private String lastName;
@@ -43,13 +44,13 @@ public class User{
 
     /**
      * No args constructor for use in serialization
-     * 
+     *
      */
-    public User() {
+    public User1() {
     }
 
     /**
-     * 
+     *
      * @param lastName
      * @param firstName
      * @param gender
@@ -62,7 +63,7 @@ public class User{
      * @param email
      * @param registerDate
      */
-    public User(String id, String phone, String picture, Location location, String lastName, String dateOfBirth, String registerDate, String email, String title, String firstName, String gender) {
+    public User1(String id, String phone, String picture, Location1 location, String lastName, String dateOfBirth, String registerDate, String email, String title, String firstName, String gender) {
         super();
         this.id = id;
         this.phone = phone;
@@ -101,9 +102,9 @@ public class User{
         this.picture = picture;
     }
 
-   public Location getLocation() { return location; }
+   public Location1 getLocation() { return location; }
 
-    public void setLocation(Location location) {
+    public void setLocation(Location1 location) {
         this.location = location;
     }
 

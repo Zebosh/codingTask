@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/src/test/java/io/dummyapi/step_defs/SecondOptionWithPojo.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/test/java/io/dummyapi/step_defs/UserStepDefinitions.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/src/test/java/io/dummyapi/step_defs/step_definitions.java">
           <value>
             <Attribute>
