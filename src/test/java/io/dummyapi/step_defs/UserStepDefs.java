@@ -2,19 +2,20 @@ package io.dummyapi.step_defs;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.dummyapi.pojoClasses.Location1;
+import io.dummyapi.pojoClasses.GetRequest;
+import io.dummyapi.pojoClasses.Location;
 
-import io.dummyapi.pojoClasses.GetRequest1;
-import io.dummyapi.pojoClasses.User1;
+
+import io.dummyapi.pojoClasses.User;
 import io.restassured.response.Response;
 import org.junit.Assert;
 
 public class UserStepDefs {
 
-    GetRequest1 getRequest1=new GetRequest1();
+    GetRequest getRequest1=new GetRequest();
     Response response;
-    User1 user1;
-    Location1 location1;
+    User user;
+    Location location;
 
     @Given("I send GET request to {string} endpoint with {string} id")
     public void i_send_GET_request_to_endpoint_with_id(String endpoint, String userID) {
@@ -33,23 +34,23 @@ public class UserStepDefs {
     @Then("Verify that user firstname is {string} and lastname is {string}")
     public void verify_that_user_firstname_is_and_lastname_is(String firstName, String lastName) {
 
-        user1= response.body().as(User1.class);
-        Assert.assertEquals(firstName,user1.getFirstName());
-        Assert.assertEquals(lastName,user1.getLastName());
+        user= response.body().as(User.class);
+        Assert.assertEquals(firstName,user.getFirstName());
+        Assert.assertEquals(lastName,user.getLastName());
 
     }
 
     @Then("Verify that user's country name is {string}")
     public void verify_that_user_s_country_name_is(String country) {
 
-     location1=user1.getLocation();
-        Assert.assertEquals(country,location1.getCountry() );
+     location=user.getLocation();
+        Assert.assertEquals(country,location.getCountry() );
 
     }
 
     @Then("Verify that user's city name is {string}")
     public void verify_that_user_s_city_name_is(String cityName) {
 
-        Assert.assertEquals(cityName, location1.getCity());
+        Assert.assertEquals(cityName, location.getCity());
     }
 }

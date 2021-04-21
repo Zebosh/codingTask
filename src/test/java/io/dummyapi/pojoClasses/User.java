@@ -6,7 +6,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class User1 {
+public class User {
 
     @SerializedName("id")
     @Expose
@@ -19,7 +19,7 @@ public class User1 {
     private String picture;
     @SerializedName("location")
     @Expose
-    private Location1 location;
+    private Location location;
     @SerializedName("lastName")
     @Expose
     private String lastName;
@@ -46,7 +46,7 @@ public class User1 {
      * No args constructor for use in serialization
      *
      */
-    public User1() {
+    public User() {
     }
 
     /**
@@ -63,7 +63,8 @@ public class User1 {
      * @param email
      * @param registerDate
      */
-    public User1(String id, String phone, String picture, Location1 location, String lastName, String dateOfBirth, String registerDate, String email, String title, String firstName, String gender) {
+    public User(String id, String phone, String picture, Location
+            location, String lastName, String dateOfBirth, String registerDate, String email, String title, String firstName, String gender) {
         super();
         this.id = id;
         this.phone = phone;
@@ -102,9 +103,9 @@ public class User1 {
         this.picture = picture;
     }
 
-   public Location1 getLocation() { return location; }
+   public Location getLocation() { return location; }
 
-    public void setLocation(Location1 location) {
+    public void setLocation(Location location) {
         this.location = location;
     }
 

@@ -6,7 +6,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class Location1 {
+public class Location {
 
     @SerializedName("street")
     @Expose
@@ -28,7 +28,7 @@ public class Location1 {
      * No args constructor for use in serialization
      *
      */
-    public Location1() {
+    public Location() {
     }
 
     /**
@@ -39,7 +39,7 @@ public class Location1 {
      * @param timezone
      * @param state
      */
-    public Location1(String street, String country, String state, String city, String timezone) {
+    public Location(String street, String country, String state, String city, String timezone) {
         super();
         this.street = street;
         this.country = country;

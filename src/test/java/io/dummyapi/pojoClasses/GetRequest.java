@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.given;
 import static org.testng.AssertJUnit.assertEquals;
 
 
-public class GetRequest1 {
+public class GetRequest {
 
 
     public Response  getOneUser(String endpoint,String userId){
