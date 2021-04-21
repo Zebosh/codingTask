@@ -22,7 +22,7 @@ API base url: `https://dummyapi.io/data/api/`
 API endpoint: `/user/{userId}`
 
 ---
-## TASK Solution
+### Task Solution
 
 * Created pojo classes. Instances of these classes are created and validations are done by using JUnit assertions.
 
