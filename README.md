@@ -24,7 +24,7 @@ API endpoint: `/user/{userId}`
 ---
 ## TASK Solution
 
-* Created pojo classes. Instnace of these classes are created and validations are done by using JUnit assertions.
+* Created pojo classes. Instances of these classes are created and validations are done by using JUnit assertions.
 
 
 ---
